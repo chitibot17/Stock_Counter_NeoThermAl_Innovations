@@ -17,16 +17,17 @@ The best way to count parts in bulk that are less than 1cm3 in total volume is t
 We also require a database containing other parameters for each part, like the cycle time, batch size, part name, etc. This database will be updated with the part weight and part count on daily basis to provide the stock count and daily stock usage can be calculated by subtracting each day's stock from that of the previous day.
  
 
-###The load cell control device:
+**The load cell control device:**
 
 Our load cell control device basically uses the HX711 to amplify the load cell signals and uses a menu to navigate through the various functionalities. The following features are included:
 
-*Normal weight display and measurement.
-*Tare or zero scale.
-*Add a part by entering its UID and part weight and find the batch part count accordingly.
-*Remote WiFi setup.
-*Onboard data storage on EEPROM.
-*Data uploading on AWS-IoT service.
-*Live dashboard for seeing stock quantities.
-*Battery operated.
-*Completely portable and modular, so that differently sensitive and capable load cell systems can be attached to the same control device as required.
+* Normal weight display and measurement.
+* Tare or zero scale.
+* Add a part by entering its UID and part weight and find the batch part count accordingly.
+* Remote WiFi setup.
+* Onboard data storage on EEPROM.
+* Data uploading on AWS-IoT service.
+* Live dashboard for seeing stock quantities.
+* Battery operated.
+* Completely portable and modular, so that differently sensitive and capable load cell systems can be attached to the same control device as required.
+
