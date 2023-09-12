@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	<title>Dashboard</title>
+	<!-- Link to external CSS file in the static folder -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='dashboard.css') }}">
+	<!-- Link to Google Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="header">
+		<h1>Welcome to the Dashboard</h1>
+	</div>
+	<div class="form-group">
+    <form method="POST">
+        <button class="btn btn-primary" type="submit" name="device" value="AC">
+            <img src="{{ url_for('static', filename='Screwdriver.png') }}"  width=150" height="150" alt="AC" class="btn-img">
+            <br>Screwdriver
+        </button>
+        <button class="btn btn-primary" type="submit" name="device" value="Heater">
+            <img src="{{ url_for('static', filename='Spanner.png') }}"  width=150" height="150" alt="Heater" class="btn-img">
+            <br>Spanner
+        </button>
+        <button class="btn btn-primary" type="submit" name="device" value="Refrigerator">
+            <img src="{{ url_for('static', filename='Piler.png') }}"  width=150" height="150" alt="Refrigerator" class="btn-img">
+            <br>Piler
+        </button>
+        <button class="btn btn-primary" type="submit" name="device" value="Compressor">
+            <img src="{{ url_for('static', filename='Hammer.png') }}" width=150" height="150" alt="Compressor">
+            <br>Hammer
+        </button>
+        <button class="btn btn-primary" type="submit" name="device" value="Dehumidifiers">
+            <img src="{{ url_for('static', filename='Rope.png') }}" width=150" height="150" alt="Dehumidifiers">
+            <br>Rope
+        </button>
+    </form>
+</div>
+
+</body>
+</html>
+

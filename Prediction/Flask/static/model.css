@@ -1,0 +1,85 @@
+/* Change background color of body to light gray */
+body {
+  background-color: #f2f2f2;
+}
+
+h1 {
+  text-align: center;
+}
+
+
+/* Center the form on the page */
+form {
+  margin: auto;
+  width: 50%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: white;
+  border-radius: 5px;
+  animation-name: slideInDown;
+  animation-duration: 1s;
+}
+
+/* Add a border around the form fields */
+input[type="number"], input[type="text"] {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 6px 10px;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+
+/* Style the Submit button */
+input[type="submit"] {
+  background-color: light green;
+  color: black;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Add some color to the form elements */
+label, input[type="submit"] {
+  color: black;
+}
+
+/* Change the background color of the Submit button on hover */
+input[type="submit"]:hover {
+  background-color: blue;
+}
+
+/* Add keyframes for the animation */
+@keyframes slideInDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Add animation to the result message */
+.animated-message {
+  animation-name: slideInUp;
+  animation-duration: 1s;
+}
+
+/* Add color to the result message */
+.result {
+  color: #ff9933;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Add keyframes for the animation */
+@keyframes slideInUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
